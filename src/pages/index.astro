@@ -1,4 +1,5 @@
 ---
+const msg = "Hello, world!";
 ---
 
 <html lang="ja">
@@ -9,6 +10,14 @@
 		<title>Astro</title>
 	</head>
 	<body>
-		<h1>Astro</h1>
+		<slot />
 	</body>
 </html>
+
+<style>
+	div {
+		color: blue;
+		font-size: 20px;
+	}
+
+</style>
