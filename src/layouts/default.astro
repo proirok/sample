@@ -1,5 +1,6 @@
 ---
-import About from '../pages/about.astro';
+import Header from '../pages/header.astro'
+import Footer from '../pages/footer.astro'
 ---
 
 <html lang="ja">
@@ -10,7 +11,16 @@ import About from '../pages/about.astro';
 		<title>Astro</title>
 	</head>
 	<body>
-		<About />
+		<Header />
 		<slot />
+		<Footer />
 	</body>
 </html>
+
+<style>
+	div {
+		color: blue;
+		font-size: 20px;
+	}
+
+</style>
